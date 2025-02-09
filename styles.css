@@ -1,0 +1,333 @@
+.top-bar {
+    width: 100%;
+    height: 1.3cm; /* Updated height to 1.3 cm */
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #808080; /* Grey border color */
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.logo {
+    height: 80%; /* Reduce the logo size to 80% of the bar height */
+    margin-left: 10px; /* Add some margin to the left */
+    vertical-align: middle; /* Center the logo vertically */
+    margin-top: 0.1cm; /* Move the logo down by 0.1 cm */
+}
+
+.logo-below-bar {
+    display: block;
+    margin: 1.5cm auto 0; /* Adjust margin to position the logo below the bar */
+    height: 80px; /* Adjust height as needed */
+}
+
+.second-image {
+    display: block;
+    margin: 1.7cm auto; /* Move the second image down by 0.7 cm */
+    height: 80px; /* Adjust height as needed */
+}
+
+.text-below-image {
+    text-align: center;
+    font-size: 1.8em; /* Increase font size by 20% */
+    margin-top: -1.5cm; /* Move the text 2 cm up */
+    font-weight: bold; /* Make the text bold */
+    font-family: 'Montserrat', sans-serif; /* Use a good font */
+}
+
+.tagline {
+    text-align: center;
+    font-size: 1em; /* Reduce font size */
+    margin-top: 0.2cm; /* Adjust margin as needed */
+    font-family: 'Montserrat', sans-serif; /* Use the new stylish font */
+}
+
+.placement-text {
+    text-align: center;
+    font-size: 1.5em; /* Adjust font size as needed */
+    margin-top: 1cm; /* Adjust margin as needed */
+    font-weight: bold; /* Make the text bold */
+    font-family: 'Montserrat', sans-serif; /* Use a good font */
+}
+
+.career-programs-text {
+    text-align: center;
+    font-size: 1.8em; /* Adjust font size as needed */
+    margin-top: 1cm; /* Adjust margin as needed */
+    font-weight: bold; /* Make the text bold */
+    font-family: 'Montserrat', sans-serif; /* Use a good font */
+    color: black; /* Set text color */
+}
+
+.career-program-image {
+    display: block;
+    margin: 1cm auto; /* Center the image and add margin */
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.program-description {
+    text-align: center;
+    font-size: 1.5em; /* Adjust font size as needed */
+    margin-top: 0.5cm; /* Adjust margin as needed */
+    font-weight: bold; /* Make the text bold */
+    font-family: 'Montserrat', sans-serif; /* Use a good font */
+    color: black; /* Ensure text color is black */
+}
+
+.menu-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 10px; /* Add padding to ensure it is fully visible */
+    z-index: 1002; /* Ensure it is above other elements */
+}
+
+.nav-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: -0.2cm; /* Shift the menu 0.2 cm to the left */
+    background-color: white;
+    overflow-x: hidden;
+    transition: width 0.5s, right 0.5s; /* Ensure smooth sliding transition */
+    padding-top: 60px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+}
+
+.nav-menu a {
+    padding: 8px 8px 8px 32px; /* Adjust padding for right-side menu */
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #808080;
+}
+
+.nav-menu .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px; /* Adjust position for right-side menu */
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 4cm; /* Ensure content is not hidden behind the top bar, images, and text */
+    padding: 20px;
+}
+
+.logo-slider {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 1cm 0; /* Move the logo slider 0.5 cm up */
+}
+
+.logo-track {
+    display: flex;
+    animation: scroll 20s linear infinite; /* Ensure smooth scrolling */
+}
+
+.logo-item {
+    flex: 0 0 auto;
+    padding: 0 1cm; /* Set gap between logos to 1 cm */
+}
+
+.logo-item img {
+    height: 50px; /* Adjust height as needed */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.logo-slider:hover .logo-track {
+    animation-play-state: paused;
+}
+
+.who-we-are-text {
+    text-align: center;
+    font-size: 1.8em; /* Adjust font size as needed */
+    margin-top: 1cm; /* Adjust margin as needed */
+    font-weight: bold; /* Make the text bold */
+    font-family: 'Montserrat', sans-serif; /* Use a good font */
+    color: black; /* Set text color */
+}
+
+.platform-description {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 1cm;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    padding: 0 20px;
+}
+
+.mission-statements {
+    text-align: left; /* Ensure alignment starts from the left side */
+    font-size: 1.2em;
+    margin: 1cm auto;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.mission-statements ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left; /* Ensure alignment starts from the left side */
+}
+
+.mission-statements li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.mission-statements li::before {
+    content: "✅";
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .platform-description, .mission-statements {
+        text-align: center;
+    }
+
+    .mission-statements ul {
+        padding-left: 0;
+    }
+
+    .mission-statements li {
+        justify-content: center;
+    }
+}
+
+.contact-heading {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 1cm;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.call-us-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    margin: 1cm auto;
+    display: block;
+    text-align: center;
+    width: 60%; /* Reduce size to 60% */
+}
+
+.call-us-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.call-us-button i {
+    margin-right: 10px;
+}
+
+.call-us-button-container {
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.email-us-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    margin: 1cm auto;
+    display: block;
+    text-align: center;
+    width: 60%; /* Reduce size to 60% */
+}
+
+.email-us-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.email-us-button i {
+    margin-right: 10px;
+}
+
+.email-us-button-container {
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1cm 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #007BFF;
+}
+
+.developed-by {
+    color: green;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1cm;
+    font-weight: bold; /* Make the text bold */
+}
